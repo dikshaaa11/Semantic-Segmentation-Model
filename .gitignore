@@ -1,0 +1,19 @@
+# Ignore dataset
+data/
+
+# Ignore outputs
+outputs/
+outputs/predictions/
+outputs/predictions.zip
+
+# Ignore python cache
+__pycache__/
+*.pyc
+
+# Ignore environments
+.env
+venv/
+.cache/
+
+# Ignore VSCode
+.vscode/
