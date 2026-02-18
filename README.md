@@ -1,29 +1,25 @@
-# Desert Semantic Segmentation Backend
+# Desert Semantic Segmentation
 
-This repository contains the backend implementation for desert terrain semantic segmentation.
+Backend model for desert terrain semantic segmentation using U-Net.
 
-## Features
-- U-Net based segmentation model
-- Training pipeline
-- Inference script for test images
-- DINOv2 backbone support
+## Structure
 
-## Folder Structure
-- models/ → U-Net architecture
-- scripts/ → training & inference scripts
-- Hackathon/ → environment setup files
-- outputs/ → model weights & predictions (ignored in git)
-- data/ → dataset (ignored in git)
+- models/ → Model architecture
+- scripts/ → Training and inference scripts
+- Hackethon/ → Hackathon utilities
+- requirements.txt → Dependencies
 
 ## How to Run
 
-### 1. Create environment
-conda create -n segmentation python=3.10
-conda activate segmentation
+### Install dependencies
 pip install -r requirements.txt
 
-### 2. Train
+### Train
 python -m scripts.train
 
-### 3. Inference
+### Inference
 python -m scripts.infer
+
+---
+
+Outputs are saved inside the outputs/ directory (ignored from git).
